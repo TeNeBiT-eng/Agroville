@@ -1,0 +1,172 @@
+.nav {
+  background-color: #223dbb;
+}
+
+.navBar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  margin: 15px;
+  position: relative;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.4s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.btn-signup::before {
+  display: none;
+}
+
+.btn-signup button {
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.navItems button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  transition: all 0.4s ease;
+}
+
+.navItems button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.navItems a button:hover {
+  color: white !important;
+}
+
+.navItems a button {
+  color: #223dbb;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .navItems {
+    position: absolute;
+    top: 80px;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    padding: 1rem 2.5rem 1rem 1rem;
+    transform: translateX(-1000%);
+    transition: all 0.45s ease;
+    background-color: white;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .navItems a {
+    color: #223dbb;
+    font-weight: 500;
+  }
+
+  .navItems a::before {
+    display: none;
+  }
+
+  .navItems.open {
+    transform: translateX(0);
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .bars {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #212b51;
+    transition: all 0.4s ease;
+    background-color: white;
+  }
+
+  .bars::before,
+  .bars::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    background-color: #212b51;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+  }
+
+  .bars::before {
+    width: 32px;
+    transform: translateY(-8px);
+  }
+
+  .bars::after {
+    width: 32px;
+    transform: translateY(8px);
+  }
+
+  .nav-toggle.open > .bars {
+    transform: translateX(-42px);
+    background-color: transparent;
+  }
+
+  .nav-toggle.open > .bars::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+  }
+
+  .nav-toggle.open > .bars::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+
+  .navItems button {
+    background-color: #223dbb;
+  }
+
+  .navItems a button {
+    color: white;
+    transition: all 0.4s ease;
+  }
+}
