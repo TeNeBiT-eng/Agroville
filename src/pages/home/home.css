@@ -1,24 +1,14 @@
+.about_container {
+  background-image: url(../../assets/images/about-bg.png);
+}
+
 .about-overlay {
-  background: #223dbbd9 !important;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  background: #223dbbd9;
+  padding-bottom: 2rem;
 }
 
 .about-heading h2 {
-    margin-bottom: 2rem;
-}
-
-.about_container {
-    position: relative;
+  padding: 2rem;
 }
 
 .about-heading h2 {
@@ -40,30 +30,31 @@
 }
 
 .about-text {
-    font-size: 1.05rem;
-    line-height: 2;
-    font-weight: 500;
+  color: white;
+  font-size: 1.05rem;
+  line-height: 2;
+  font-weight: 500;
 }
 
 .mid-text {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .about_readmore-btn button {
-    padding: 1rem 2rem;
-    color: #223dbb;
-    background-color: white;
-    border: none;
-    border-radius: 6px;
-    margin-top: 3rem;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
+  padding: 1rem 2rem;
+  color: #223dbb;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 3rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .about_readmore-btn button:hover {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 .about-illustrations {
@@ -82,19 +73,21 @@
 }
 
 .about_img-container img {
-    height: 100%;
-}
-
-.ilustration-container {
-
+  height: 100%;
 }
 
 .ilustration-text {
-    padding: 2rem;
-    color: black;
-    border-radius: 7px;
+  padding: 2rem;
+  color: black;
+  border-radius: 7px;
 }
 
 h6 {
-    padding: 1rem 0;
+  padding: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  .text_illustration {
+    grid-template-columns: auto;
+  }
 }

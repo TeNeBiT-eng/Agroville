@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import BG from "../../assets/images/bg-img.png";
 import Header from "../../components/header1/Header";
 import Sponsor from "../../components/sponsorLogo/Sponsor";
-import ABOUTBG from "../../assets/images/about-bg.png";
+// import ABOUTBG from "../../assets/images/about-bg.png";
 import Livestock from "../../assets/svgs/livestock.svg";
 import Veterinary from "../../assets/svgs/veterinary.svg";
 import Frozenfood from "../../assets/svgs/frozenfood.svg";
@@ -19,9 +19,9 @@ const Home = () => {
 
       <article>
         <div className="about_container">
-          <div className="about_img-container">
+          {/* <div className="about_img-container">
             <img src={ABOUTBG} alt="backgroundimage" className="bgImage" />
-          </div>
+          </div> */}
           <div className="about-overlay">
             <div className="about-heading">
               <h2>About Us</h2>
@@ -70,7 +70,7 @@ const Home = () => {
                   <div className="ilustration-container">
                     <div className="ilustration-text">
                       <div className="illustration-img">
-                        <img src={Livestock} alt="" />
+                        <img src={Veterinary} alt="" />
                       </div>
                       <h6>Livestock Sales</h6>
                       <p>
@@ -83,7 +83,7 @@ const Home = () => {
                   <div className="ilustration-container">
                     <div className="ilustration-text">
                       <div className="illustration-img">
-                        <img src={Livestock} alt="" />
+                        <img src={Frozenfood} alt="" />
                       </div>
                       <h6>Livestock Sales</h6>
                       <p>
@@ -96,7 +96,7 @@ const Home = () => {
                   <div className="ilustration-container">
                     <div className="ilustration-text">
                       <div className="illustration-img">
-                        <img src={Livestock} alt="" />
+                        <img src={Investment} alt="" />
                       </div>
                       <h6>Livestock Sales</h6>
                       <p>
